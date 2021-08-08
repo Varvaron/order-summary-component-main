@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background:hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg) no-repeat 0 -100px;
+}
+
+.container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+}
+.container img {
+    order: -1;
+    border-radius: 20px 20px 0 0;
+}
+.main-header {
+    color:hsl(223, 47%, 23%);
+    font-size: 1.7em;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.container > p {
+    width: 300px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.hero-image {
+    width: 400px;
+}
+.price-section {
+    width: 300px;
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+    align-items: center;
+}
+.price-section .header {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0 0 10px 0;
+    padding: 0;
+
+}
+.price-section .price {
+    color: hsl(224, 23%, 55%);
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.price-section-image {
+    margin: 0 20px 0 0;
+}
+
+.price-section-right {
+    margin-left: 60px;
+    
+}
+.price-section-right a {
+    color: hsl(245, 75%, 52%);
+}
+
+.price-section-right a:hover {
+    color: hsl(245, 75%, 52%, 70%); 
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    width: 340px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    box-shadow: 0px 20px 10px -4px hsla(224, 23%, 55%, 50%);
+}
+.btn:hover {
+    background-color: hsl(245, 75%, 52%, 70%); 
+}
+.cancel-btn {
+    border: none;
+    background-color: white;
+    color: hsl(224, 9%, 57%);    
+    margin: 10px 0 40px 0;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px;
+        background: hsl(225, 100%, 94%);
+    }
+    .container {
+        margin-top: 50px;
+    }
+    .container, 
+    .hero-image {
+        width: 340px;
+    }
+    .container > p, 
+    .btn, 
+    .price-section {
+        width: 280px;
+    }
+}
